@@ -1030,7 +1030,7 @@
 
 /* One */
 
-	#one:before {
+	#about:before {
 		background-image: url("../images/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
