@@ -1,0 +1,8 @@
+name: Lucio's Blog
+source: "."
+dest: "build"
+ignore:
+  - .git/*
+  - .gitignore
+  - .cobalt.yml
+  - build/*
