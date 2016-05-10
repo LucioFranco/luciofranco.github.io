@@ -6,3 +6,4 @@ ignore:
   - .gitignore
   - .cobalt.yml
   - build/*
+  - .travis.yml
