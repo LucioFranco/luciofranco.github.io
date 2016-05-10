@@ -10,7 +10,8 @@ after_success: |-
   cobalt import --branch master &&
   git config user.name "Cobalt Site Deployer" &&
   git config user.email "name@example.com" &&
-  git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
+  git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
+
 env:
   global:
     secure: nr/NMd3QlhagzQM7NPBsWPYrxwQtE/ApRStQ53sbBjAo/5ypifTfxmPeUWMjcOXrO65Zsees4/f5hsV0H6tTvlKMoacRyxMZehcXD3sUPTtP+AK58X1uIi/vREKTXH9NUsOd/cVfJG/UJqWVNGoqQ7ddOV28RVFk4bW5wWfsU20gZYlNGeiVV++5mm/weohX6jR8uTKJG63uXVrR2hbA2MpFkvJo6VHdjpD3N6Oyd6CBAWXzRYzImWF9NBL5BAVKsUkhTid99S2LRCNEk1hQbeDUHDAhOdb8E5N0kGNNiJz5wd0Vqq6OO46Ee81IWAkQwMomTwOi+DPt3hAcOz6CDrzGmCJ0T4i5V/oGZKPcGa0nmGTJ2ba7asO2muRhQEgjQPSAkbxgRyeYmKCTUxSSB5XD4RsFkRHogwL1x3JJ4wKrrnPhGTjw/gyk/uZlX6Uk7oz/PyJNwMNl5Nn1LOY5sqUW1vrCpsPuDcYmZfprJlQeR8bWSEyIFP36Qg69kz26T2lQbfhvfvfx/qdShBaAQLk8skrR8QjVZriKM8w3bFgmYC+5b1u5WNYKrq3TEzq2l9m9VG9yY2baVviVlIIpjtWdw65oLrU0BqOmSAKbig09Ugefn7F6XURJhrvDGUkn4JU25U2ODxOm7XVaQuEdZZo6ac9hk3FvtEKyCFRVzA0=
