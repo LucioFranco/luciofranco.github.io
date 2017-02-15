@@ -1,7 +1,7 @@
 sudo: false
 language: rust
 before_script:
-- cargo install cobalt-bin
+- cargo install --vers 0.4.0 cobalt-bin
 - export PATH="$PATH:/home/travis/.cargo/bin"
 script:
 - cobalt build
