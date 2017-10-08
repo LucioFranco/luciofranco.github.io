@@ -11,8 +11,8 @@ after_success: |-
   cobalt import --branch master &&
   git config user.name "Cobalt Site Deployer" &&
   git config user.email "name@example.com" &&
-  git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git &&
-  git push -fq origin master
+  git remote add deploy https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git &&
+  git push -fq deploy master
 
 env:
   global:
